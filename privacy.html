@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Privacy Policy — FormPilot</title>
+<meta name="description" content="FormPilot Privacy Policy: Learn how our Chrome extension processes form data and OCR 100% locally on your device with complete privacy." />
+<link rel="icon" type="image/png" sizes="48x48" href="assets/images/icon48.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Noto+Sans+Gujarati:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="bg-fx">
+  <div class="orb" style="width:520px;height:520px;background:#6d5efc;top:-120px;left:-120px;"></div>
+  <div class="orb" style="width:480px;height:480px;background:#22d3ee;top:260px;right:-160px;opacity:.35;"></div>
+  <div class="orb" style="width:420px;height:420px;background:#f472b6;top:900px;left:-100px;opacity:.3;"></div>
+</div>
+<div class="grid-fx"></div>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/icon48.png" alt="FormPilot" />
+      <span>Form<span class="pilot">Pilot</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#pricing">Free Trial</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="privacy.html" class="active">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <button class="nav-cta js-store">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.3"/><path d="M12 3v6M5.2 16.5l5.1-3M18.8 16.5l-5.1-3"/></svg>
+      Add to Chrome
+    </button>
+    <div class="burger" onclick="toggleMobileNav(true)"><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-head">
+    <div class="brand">
+      <img src="assets/images/icon48.png" alt="FormPilot" />
+      <span>Form<span class="pilot">Pilot</span></span>
+    </div>
+    <div class="burger" onclick="toggleMobileNav(false)" style="font-size:20px;">✕</div>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="index.html#features">Features</a>
+  <a href="index.html#how">How it works</a>
+  <a href="index.html#pricing">30-Day Free Trial</a>
+  <a href="index.html#faq">FAQ</a>
+  <a href="privacy.html" style="color:var(--cyan);">Privacy Policy</a>
+  <a href="terms.html">Terms &amp; Conditions</a>
+  <a href="index.html#contact">Contact</a>
+  <button class="btn btn-primary js-store" onclick="toggleMobileNav(false)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.3"/><path d="M12 3v6M5.2 16.5l5.1-3M18.8 16.5l-5.1-3"/></svg>
+    Add to Chrome
+  </button>
+</div>
+
+<main>
+  <section class="page-hero container">
+    <span class="eyebrow">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5-3.4 8.7-8 11-4.6-2.3-8-6-8-11V5l8-3z" fill="currentColor"/></svg>
+      Official Policy &middot; Chrome Web Store Verified
+    </span>
+    <h1>Privacy Policy</h1>
+    <p>Plain-language summary: your documents, forms, and OCR processing run 100% locally on your device. Nothing is uploaded or sold.</p>
+  </section>
+
+  <div class="legal container">
+    <p class="updated">Last updated: <span class="js-date">October 2026</span> &middot; Developer: Prince Vanani (Gujarat, India)</p>
+
+    <div class="toc">
+      <h5>On this page</h5>
+      <div class="toc-list">
+        <a onclick="scrollToId('p-overview')"><span>1.</span> Overview</a>
+        <a onclick="scrollToId('p-does')"><span>2.</span> What FormPilot does</a>
+        <a onclick="scrollToId('p-process')"><span>3.</span> Where your data is processed</a>
+        <a onclick="scrollToId('p-stored')"><span>4.</span> What is stored, and where</a>
+        <a onclick="scrollToId('p-trial')"><span>5.</span> Free trial email verification</a>
+        <a onclick="scrollToId('p-notdo')"><span>6.</span> What FormPilot does not do</a>
+        <a onclick="scrollToId('p-perms')"><span>7.</span> Permissions FormPilot requests</a>
+        <a onclick="scrollToId('p-thirdparty')"><span>8.</span> Third-party libraries &amp; APIs</a>
+        <a onclick="scrollToId('p-rights')"><span>9.</span> Your choices and controls</a>
+        <a onclick="scrollToId('p-children')"><span>10.</span> Children's privacy</a>
+        <a onclick="scrollToId('p-changes')"><span>11.</span> Changes to this policy</a>
+        <a onclick="scrollToId('p-contact')"><span>12.</span> Contact &amp; developer information</a>
+      </div>
+    </div>
+
+    <h2 id="p-overview">1. Overview</h2>
+    <p>FormPilot ("the extension," "we," "our") is a Google Chrome browser extension developed by <strong>Prince Vanani</strong> that helps users extract data from an image or PDF document and fill matching fields into web forms. This policy explains what data the extension handles, where it is processed, and what is &mdash; and is not &mdash; stored. It applies to the FormPilot browser extension and to this website.</p>
+
+    <h2 id="p-does">2. What FormPilot does</h2>
+    <ul>
+      <li>Reads documents (invoices, receipts, orders, PDFs, screenshots, and images) you choose to upload or select, and extracts text using on-device optical character recognition (OCR) and PDF parsing.</li>
+      <li>Scans form fields present on a web page &mdash; <strong>only when you click "Scan this form"</strong>.</li>
+      <li>Fills matching form fields on a web page &mdash; <strong>only when you click "Fill form now"</strong>.</li>
+      <li>Offers right-click context menu options ("Extract data from this image" / "Extract data from this page") as an optional shortcut to the same local upload flow.</li>
+    </ul>
+
+    <h2 id="p-process">3. Where your data is processed</h2>
+    <p>All document processing &mdash; OCR text extraction, PDF parsing, and intelligent synonym matching &mdash; happens <strong>locally, inside your own browser, on your own device</strong>. Documents you upload and screenshots you capture are <strong>never uploaded to any remote server</strong>.</p>
+    <div class="callout callout-blue">
+      <b>Client-side execution:</b> Tesseract.js and PDF.js run as client-side Web Workers inside the extension. Your invoices, bank statements, client information, and tax data never leave your browser memory.
+    </div>
+
+    <h2 id="p-stored">4. What is stored, and where</h2>
+    <p>FormPilot stores limited configuration data locally on your device via Chrome's built-in <code>chrome.storage.local</code> API:</p>
+    <ul>
+      <li><strong>Confirmed field mappings</strong> &mdash; for example, "on this website, 'Customer Name' maps to 'Party Name'" &mdash; saved per website domain, so you don't have to re-confirm familiar matches next time.</li>
+      <li><strong>Your preferences</strong> &mdash; your chosen interface language (English, Hindi, Gujarati) and OCR language selection.</li>
+      <li><strong>Local trial cache</strong> &mdash; your verified email address and trial expiration date to maintain uninterrupted access.</li>
+    </ul>
+    <p>You can clear remembered field mappings at any time directly in the extension's Settings panel ("Forget remembered fields for this site"), or by removing the extension from Chrome, which deletes all local storage.</p>
+
+    <h2 id="p-trial">5. Free trial email verification</h2>
+    <p>FormPilot offers every user a <strong>30-Day Free Trial</strong> with full feature access:</p>
+    <ul>
+      <li>To prevent automated abuse and activate your 30-day trial, FormPilot requests your email address and sends a single 6-digit One-Time Password (OTP) verification code.</li>
+      <li>Your email and trial start/expiration timestamps are securely stored in our trial verification database.</li>
+      <li><strong>No payment or credit card details are collected</strong> for the free trial.</li>
+      <li>Your email is used strictly for authentication and trial management; we never sell, rent, or distribute your email to third-party advertisers.</li>
+    </ul>
+
+    <h2 id="p-notdo">6. What FormPilot does not do</h2>
+    <ul>
+      <li><strong>Never sells, rents, or shares your data</strong> with third parties under any circumstance.</li>
+      <li><strong>Never tracks your browsing activity</strong> across the web or profiles your user behavior.</li>
+      <li><strong>Never transmits document contents, invoice lines, or form entries</strong> to any server.</li>
+      <li><strong>Never runs background surveillance:</strong> FormPilot is inactive until you open the sidepanel and explicitly initiate an extraction or form scan.</li>
+    </ul>
+
+    <h2 id="p-perms">7. Permissions FormPilot requests</h2>
+    <p>Chrome requires extensions to declare upfront every capability they may use. Below is the exact, transparent rationale for each permission declared in FormPilot's <code>manifest.json</code>:</p>
+    <ul>
+      <li><code>storage</code> &mdash; To save your language preferences, domain field mappings, and verified trial status locally on your device.</li>
+      <li><code>sidePanel</code> &mdash; To display FormPilot's user interface cleanly alongside your active web page.</li>
+      <li><code>activeTab</code>, <code>tabs</code>, <code>scripting</code> &mdash; To scan the DOM of your chosen destination tab when you click "Scan this form", and inject matched values when you click "Fill form now".</li>
+      <li><code>contextMenus</code> &mdash; To add convenient right-click shortcuts for image and page extraction.</li>
+      <li><strong>Host permissions (<code>&lt;all_urls&gt;</code>)</strong> &mdash; FormPilot is designed to autofill forms on any web application of your choice (ERP, CRM, accounting portals, tax websites). The extension only inspects or modifies a web page when you explicitly trigger the action.</li>
+    </ul>
+
+    <h2 id="p-thirdparty">8. Third-party libraries &amp; APIs</h2>
+    <ul>
+      <li><strong>Tesseract.js &amp; PDF.js</strong> &mdash; Open-source libraries bundled locally within the extension to perform OCR and PDF text extraction.</li>
+      <li><strong>Language data</strong> &mdash; Generic character recognition models (e.g. Hindi or Gujarati traineddata) may be fetched once upon first language selection from public open-source CDNs. These downloads contain zero personal information.</li>
+      <li><strong>Trial Authentication Server</strong> &mdash; Hosted at <code>https://formpilot-server-7c1p.onrender.com</code>, used solely to verify the 6-digit email OTP and check trial validity.</li>
+    </ul>
+
+    <h2 id="p-rights">9. Your choices and controls</h2>
+    <ul>
+      <li>You control what documents to open and what form fields to fill &mdash; autofill never executes automatically.</li>
+      <li>You can review, edit, or override any field match before applying it.</li>
+      <li>You can clear remembered mappings anytime from the Settings panel.</li>
+      <li>You can uninstall FormPilot at any time via <code>chrome://extensions</code>, instantly purging all local data.</li>
+    </ul>
+
+    <h2 id="p-children">10. Children's privacy</h2>
+    <p>FormPilot is a professional productivity tool designed for adults, accountants, and office operators. It is not intended for children under 13, and does not knowingly collect any data from children.</p>
+
+    <h2 id="p-changes">11. Changes to this policy</h2>
+    <p>If we update this Privacy Policy, the revised version will be published here with an updated "Last updated" date. Significant updates will also be highlighted in the extension's release notes on the Chrome Web Store.</p>
+
+    <h2 id="p-contact">12. Contact &amp; developer information</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or your data, please contact the developer:</p>
+    <ul>
+      <li><strong>Developer:</strong> Prince Vanani</li>
+      <li><strong>Location:</strong> Gujarat, India</li>
+      <li><strong>Support Email:</strong> <a href="mailto:verify.formpilot@gmail.com" style="color:var(--cyan);">verify.formpilot@gmail.com</a></li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/images/icon48.png" alt="FormPilot" />
+          <span>Form<span style="background:linear-gradient(135deg,#22d3ee,#6d5efc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Pilot</span></span>
+        </div>
+        <p class="foot-p">Smart form autofill for your browser. Copy data from any invoice, image, or PDF and fill it into any web form &mdash; instantly, privately.</p>
+      </div>
+      <div class="foot-col"><h5>Product</h5>
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">30-Day Free Trial</a>
+      </div>
+      <div class="foot-col"><h5>Legal</h5>
+        <a href="privacy.html" style="color:#fff;">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+      <div class="foot-col"><h5>Support</h5>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2026 FormPilot &middot; Built by Prince Vanani. All rights reserved.</p>
+      <div class="foot-social">
+        <a href="#" title="Chrome Web Store" class="js-store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.3"/><path d="M12 3v6M5.2 16.5l5.1-3M18.8 16.5l-5.1-3"/></svg></a>
+        <a href="mailto:verify.formpilot@gmail.com" title="Email" class="js-mailto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
