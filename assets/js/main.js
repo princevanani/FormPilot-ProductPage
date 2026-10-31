@@ -1,11 +1,9 @@
-/**
- * FormPilot Product Website Configuration & Interactive Logic
- */
 var SITE_CONFIG = {
-  storeUrl: '', // Add Chrome Web Store listing link when live (e.g. 'https://chromewebstore.google.com/detail/...')
+  extensionId: 'ngjjbjndpfdaopbjciddakbaaodkpkdo',
+  storeUrl: 'https://chromewebstore.google.com/detail/formpilot/ngjjbjndpfdaopbjciddakbaaodkpkdo',
   supportEmail: 'verify.formpilot@gmail.com',
   lastUpdated: 'October 2026',
-  launchBanner: 'FormPilot — 30-Day Free Trial Available Now! Intelligent Cross-Tab Form Autofill'
+  launchBanner: 'FormPilot is now live on the Chrome Web Store! 30-Day Free Trial Available.'
 };
 
 function getHomePrefix() {
@@ -108,12 +106,17 @@ function applyConfig() {
   });
 
   document.querySelectorAll('.js-store').forEach(function(el) {
+    if (el.tagName && el.tagName.toLowerCase() === 'a') {
+      el.setAttribute('href', SITE_CONFIG.storeUrl);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener');
+    }
     el.addEventListener('click', function(e) {
-      e.preventDefault();
       if (SITE_CONFIG.storeUrl) {
-        window.open(SITE_CONFIG.storeUrl, '_blank', 'noopener');
-      } else {
-        toast('FormPilot is currently pending Chrome Web Store review. Extension will be available soon!');
+        if (el.tagName && el.tagName.toLowerCase() !== 'a') {
+          e.preventDefault();
+          window.open(SITE_CONFIG.storeUrl, '_blank', 'noopener');
+        }
       }
     });
   });

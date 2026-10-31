@@ -78,18 +78,20 @@ Both URLs are supported out of the box!
 
 ## ⚙️ Configuration (`assets/js/main.js`)
 
-You can customize global settings in [`website/assets/js/main.js`](assets/js/main.js):
+The extension ID and Chrome Web Store URL are pre-configured:
 
 ```javascript
 var SITE_CONFIG = {
-  storeUrl: '', // Paste your Chrome Web Store extension URL once published
+  extensionId: 'ngjjbjndpfdaopbjciddakbaaodkpkdo',
+  storeUrl: 'https://chromewebstore.google.com/detail/formpilot/ngjjbjndpfdaopbjciddakbaaodkpkdo',
   supportEmail: 'verify.formpilot@gmail.com',
   lastUpdated: 'October 2026',
-  launchBanner: 'FormPilot — 30-Day Free Trial Available Now! Intelligent Cross-Tab Form Autofill'
+  launchBanner: 'FormPilot is now live on the Chrome Web Store! 30-Day Free Trial Available.'
 };
 ```
 
-When `storeUrl` is filled, clicking **"Add to Chrome"** or **"Start 30-Day Free Trial"** will open your Web Store listing in a new tab.
+Clicking **"Add to Chrome"** or **"Start 30-Day Free Trial"** directly opens your Web Store listing in a new tab:
+`https://chromewebstore.google.com/detail/formpilot/ngjjbjndpfdaopbjciddakbaaodkpkdo`
 
 ---
 
